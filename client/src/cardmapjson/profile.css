@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.profile nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.profile {
+    text-align: center;
+    background-image: url('D:\Renamble\mernstackproject\client\src\cardmapjson\images\homepahe.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+
+.profile-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(205, 171, 0);
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-details label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: rgba(27, 102, 201, 0.8);
+}
+
+.user-details input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    color: black;
+}
+
+.user-details input:focus {
+    outline: none;
+    background: white;
+}
+
+.error-msg {
+    font-size: 1.2rem;
+    color: #ff4747;
+    font-weight: bold;
+}
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+    align-self: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    .profile-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .profile h2 {
+        font-size: 1.8rem;
+    }
+
+    .user-details label {
+        font-size: 1rem;
+    }
+
+    .user-details input {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
