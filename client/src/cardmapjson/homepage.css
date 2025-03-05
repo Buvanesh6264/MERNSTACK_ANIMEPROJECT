@@ -18,7 +18,7 @@
 }
 
 .homepage .header {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     background: rgba(27, 102, 201, 0.9);
     padding: 20px;
     font-size: 1.8rem;
@@ -29,9 +29,20 @@
     color: aliceblue;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
-.btn {
-    background-color: #ff6b6b;
+.first-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    width: 98%;
+    height: 88vh;
+    /* background-size: 'cover';
+    background-position: 'center';
+    transition: 'background-image 1s ease-in-out' */
+}
+.homepage .btn {
+    background-color: #ff6b6b !important;
     color: white;
     font-size: 1.2rem;
     padding: 10px 20px;

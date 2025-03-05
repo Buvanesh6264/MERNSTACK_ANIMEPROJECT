@@ -45,6 +45,21 @@ app.get("/getssingleanimebyid/:id", async (req, res) => {
     await client.close();
   }
 });
+app.get("/gettrendinganime", async (req, res) => {
+  const client = new MongoClient(uri);
+  try {
+    await client.connect();
+    const db = client.db(dbName);
+    const collection = db.collection(collectionNameforanime);
+    const documents = await collection.find({}).limit(4).toArray();
+    res.status(200).json({ documents });
+  } catch (error) {
+    res.status(400).json({ error: "Error fetching data" });
+  } finally {
+    await client.close();
+  }
+});
+
 app.post("/getuserbyemailorphone", async (req, res) => {
     const { emailOrPhone, password } = req.body;
     const client = new MongoClient(uri);
@@ -55,11 +70,9 @@ app.post("/getuserbyemailorphone", async (req, res) => {
         const user = await collection.findOne({
           $or: [{ email: emailOrPhone }, { phone: emailOrPhone }]
         });
-
         if (!user || user.password !== password) {
             return res.status(400).json({ success: false, message: "Invalid credentials" });
         }
-
         res.status(200).json({ success: true, user });
 
     } catch (error) {

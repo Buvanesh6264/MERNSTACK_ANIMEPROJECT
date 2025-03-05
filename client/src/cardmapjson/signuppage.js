@@ -1,8 +1,9 @@
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import './signuppage.css';
 import img from './images/loginpage.jpg';
+import Loginnav from './loginnav';
 
 export default function Signup() {
     const navigate = useNavigate();
@@ -92,8 +93,8 @@ export default function Signup() {
                 <img src={img} alt='log-img' />
             </div>
             <form className="form" onSubmit={handleSubmit}>
-                <h1 className="form-title">Register User</h1>
-
+                {/* <h1 className="form-title">Register User</h1> */}
+                <Loginnav /><br/>
                 <div className="form-group">
                     <input type="text" name="name" className="form-control" value={formData.name} onChange={handleChange} required />
                     <label className="form-label">Enter Your Name</label>
@@ -127,7 +128,7 @@ export default function Signup() {
                 {errors.userExists && <p className="error-message">{errors.userExists}</p>}
 
                 <div className='form-show'>
-                    <Link to='/' className='Link'>Login</Link> 
+                    {/* <Link to='/' className='Link'>Login</Link>  */}
                     <label className="showlabel">
                         <input type="checkbox" onChange={togglePasswordVisibility} checked={showPassword} />
                         Show Password

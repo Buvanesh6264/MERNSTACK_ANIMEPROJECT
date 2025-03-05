@@ -1,14 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import Navbar from './navbar';
-import axios from 'axios';
-// import users from './user.js';
-import './profile.css';
+import React, { useEffect, useState } from "react";
+import Navbar from "./navbar";
+import axios from "axios";
+import { FaUserCircle } from "react-icons/fa"; 
+import "./profile.css";
 
 const Profile = () => {
-    const [User, setUser] = useState(null);
+    const [user, setUser] = useState(null);
     const [edit, setEdit] = useState(false);
-    const [update, setUpdate] = useState({email: "",phone: ""});
+    const [update, setUpdate] = useState({ email: "", phone: "" });
 
+    useEffect(() => {
+        const username = localStorage.getItem("User");
+        if (username) {
+            axios.get(`http://localhost:3001/getuserbyname/${username}`)
+                .then((res) => {
+                    setUser(res.data);
+                    setUpdate(res.data);
+                })
+                .catch((error) => console.error("Error fetching user data:", error));
+        }
+    }, []);
     // useEffect(() => {
     //     const User = localStorage.getItem("User");
     //     if (User) {
@@ -30,23 +41,12 @@ const Profile = () => {
     //         alert("Profile updated successfully!");
     //     }
     // };
-    useEffect(() => {
-        const username = localStorage.getItem("User");
-        if (username) {
-            axios.get(`http://localhost:3001/getuserbyname/${username}`)
-                .then(res => {
-                    setUser(res.data);
-                    setUpdate(res.data);
-                })
-                .catch(error => console.error("Error fetching user data:", error));
-        }
-    }, []);
 
-    const Change = (e) => {
+    const handleChange = (e) => {
         setUpdate({ ...update, [e.target.name]: e.target.value });
     };
 
-    const Update = () => {
+    const handleUpdate = () => {
         if (edit) {
             axios.post(`http://localhost:3001/updateuser`, update)
                 .then(() => {
@@ -54,35 +54,44 @@ const Profile = () => {
                     localStorage.setItem("User", update.name);
                     alert("Profile updated successfully!");
                 })
-                .catch(error => console.error("Error updating user:", error));
+                .catch((error) => console.error("Error updating user:", error));
         }
         setEdit(!edit);
     };
 
-
     return (
-        <div className="profile" >
+        <div className="profile">
             <Navbar />
             <div className="profile-container">
-                <h2>User Info</h2>
-                {User ? (
-                    <form className="user-details">
-                        <label>Name:</label>
-                        <input type="text" name="name" value={update.name} onChange={Change} readOnly />
-                        <label>Email:</label>
-                        <input type="text" name="email" value={update.email} onChange={Change} readOnly={!edit} />
-                        <label>Phone:</label>
-                        <input type="text" name="phone" value={update.phone} onChange={Change} readOnly={!edit} />
-                        <button type="button" className="btn" onClick={Update}>
-                            {edit ? "Save" : "Update Details"}
-                        </button>
-                    </form>
+                {user ? (
+                    <div className="profile-card">
+                        <div className="profile-header">
+                            <FaUserCircle className="avatar-icon" />
+                            <h2>{user.name}</h2>
+                        </div>
+                        <div className="profile-body">
+                            <form className="user-details">
+                                <label>Name:</label>
+                                <input type="text" name="name" value={update.name} readOnly />
+                                
+                                <label>Email:</label>
+                                <input type="text" name="email" value={update.email} onChange={handleChange} readOnly={!edit} />
+                                
+                                <label>Phone:</label>
+                                <input type="text" name="phone" value={update.phone} onChange={handleChange} readOnly={!edit} />
+                                
+                                <button type="button" className="btn" onClick={handleUpdate}>
+                                    {edit ? "Save Changes" : "Edit Profile"}
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 ) : (
                     <p className="error-msg">No user logged in</p>
                 )}
             </div>
         </div>
     );
-};  
+};
 
 export default Profile;

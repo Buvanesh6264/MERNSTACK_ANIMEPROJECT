@@ -1,9 +1,10 @@
-import {  Link,useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import {  useState} from 'react';
 import './loginpage.css';
 // import users from './user'
 import axios from "axios";
 import img from './images/loginpage.jpg'
+import Loginnav from './loginnav';
 
 export default function Login() {
     const navigate = useNavigate();
@@ -98,8 +99,8 @@ export default function Login() {
             </div>
             <form className="form" onSubmit={handleLogin}>
                 {/* <img src={""} alt="logo" /> */}
-                <h1 className="form-title">Login</h1><br /><br />
-
+                {/* <h1 className="form-title">Login</h1><br /><br /> */}
+                <Loginnav />
                 <div className="form-group">
                     <input type="text" className="form-control" required value={emailOrPhone}onChange={(e) => setEmailOrPhone(e.target.value)}/>
                     <label className="form-label">Email or Phone</label>
@@ -109,7 +110,7 @@ export default function Login() {
                     <label className="form-label">Enter Your Password</label>
                 </div><br/><br />
                 <div className='form-show'>
-                    <Link to='/Signuppage' className='Link'>New User?</Link> 
+                    {/* <Link to='/Signuppage' className='Link'>New User?</Link>  */}
                     <label className="showlabel" htmlFor="show"> 
                         <input type="checkbox" id="show" onChange={togglePasswordVisibility} checked={showPassword} />
                         Show Password

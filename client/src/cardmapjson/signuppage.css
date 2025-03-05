@@ -48,6 +48,8 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    position: relative;
+    padding-top: 60px;
 }
 
 .form-title {
