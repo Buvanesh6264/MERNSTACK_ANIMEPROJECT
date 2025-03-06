@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Carddata from './carddata';
 // import data from './data';
-import "./cardmain.css";
+import "./css/cardmain.css";
 import Navbar from './navbar';
 
 function Card() {
@@ -21,7 +21,7 @@ function Card() {
   document.body.style.backgroundColor = "lightgrey";
 
   return (
-    <div className=".cardmain">
+    <div>
       <Navbar/>
       <div className="header">
         <h1>WATCH AND ENJOY</h1>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./navbar.css";
+import "./css/navbar.css";
 import {useNavigate } from "react-router-dom";
 import imag from './images/logo.jpg'
 
@@ -26,6 +26,7 @@ const Navbar = () => {
           <ul className="sidebar-links">
             <li><a href="/home">HOME</a></li>
             <li><a href="/profile">PROFILE</a></li>
+            <li><a href="/wishlist">Wishlist</a></li>
             <li><a href="/animepage">ANIME</a></li>
             <li><button className="logout" onClick={logout}>Logout</button></li>
         </ul>
@@ -35,6 +36,7 @@ const Navbar = () => {
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li><a href="/home">HOME</a></li>
         <li><a href="/profile">PROFILE</a></li>
+        <li><a href="/wishlist">Wishlist</a></li>
         <li><a href="/animepage">ANIME</a></li>
         <li><button className="logout" onClick={logout}>Logout</button></li>
       </ul>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './navbar';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './homepage.css';
+import './css/homepage.css';
 
 const Homepage = () => {
     const [username, setUsername] = useState("");
@@ -66,7 +66,7 @@ const Homepage = () => {
                 <div className="anime-list">
                     {trendingAnime.map((anime, index) => (
                         <div key={index} className="anime-card" onClick={() => moreinfo(anime)}>
-                            <img src={require(`./images/${anime.image}`)} alt={anime.title} />
+                            <img src={anime.image} alt={anime.title} />
                             <h3>{anime.title}</h3>
                         </div>
                     ))}

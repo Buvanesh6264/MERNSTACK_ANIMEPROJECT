@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const { MongoClient } = require("mongodb");
 
+const Joi = require('joi');
 const app = express();
 const uri = "mongodb://localhost:27017";
 const dbName = "animeprojectdb";
@@ -10,6 +11,26 @@ const collectionNameforuser = "users";
 
 app.use(express.json());
 app.use(cors({ origin: "http://localhost:3000" }));
+
+const addanime = Joi.object({
+  id: Joi.number().integer().required(),
+  title: Joi.string().required(),
+  image: Joi.string().required(),
+  episodes: Joi.number().integer().min(1).required(),
+  genre: Joi.array().items(Joi.string()).required(),
+  description: Joi.string().required(),
+  watchLink: Joi.string().uri().required(),
+  trailer: Joi.string().uri().required(),
+  character: Joi.array().items(
+      Joi.object({
+          id: Joi.number().integer().required(),
+          name: Joi.string().required(),
+          image: Joi.string().required(),
+          character: Joi.string().optional(),
+      })
+  ).required(),
+});
+
 
 app.get("/getanimedetials", async (req, res) => {
   const client = new MongoClient(uri);
@@ -73,6 +94,9 @@ app.post("/getuserbyemailorphone", async (req, res) => {
         if (!user || user.password !== password) {
             return res.status(400).json({ success: false, message: "Invalid credentials" });
         }
+        if (user.status !== "active") {
+          return res.status(400).json({ success: false, message: "Access denied. Your account is not active." });
+        }
         res.status(200).json({ success: true, user });
 
     } catch (error) {
@@ -132,9 +156,29 @@ app.post('/adduser', async (req, res) => {
       const db = client.db(dbName);
       const collection = db.collection(collectionNameforuser);
       await collection.insertOne(req.body);
-      res.status(200).send('user added');
+      res.status(201).send('user added');
   } catch (error) {
       res.status(400).send(error);
+  } finally {
+      await client.close();
+  }
+});
+app.post('/addanime', async (req, res) => {
+  const client = new MongoClient(uri);
+
+  const { error } = addanime.validate(req.body);
+  if (error) {
+      return res.status(400).json({ error: error.details[0].message });
+  }
+  try {
+      await client.connect();
+      const db = client.db(dbName);
+      const collection = db.collection(collectionNameforanime);
+
+      await collection.insertOne(req.body);
+      res.status(201).json({ message: 'Anime added successfully' });
+  } catch (err) {
+      res.status(400).json({ error: 'Internal Server Error' });
   } finally {
       await client.close();
   }

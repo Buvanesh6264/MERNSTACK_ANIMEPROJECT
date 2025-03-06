@@ -1,0 +1,325 @@
+[{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d90"
+  },
+  "id": 1,
+  "title": "One Piece",
+  "image": "https://resizing.flixster.com/uciujZvivIap_oVPPnYLkX_Jep8=/fit-in/1152x864/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26331782_b_v4_ab.jpg ",
+  "episodes": 1000,
+  "genre": [
+    "Adventure",
+    "Action",
+    "Fantasy"
+  ],
+  "description": "Monkey D. Luffy sets off on an adventure to become the Pirate King.",
+  "watchLink": "https://archive.org/embed/subs-please-one-piece-1071-1080p-31-c-58-ae-2-waifu-2x-2x-2n-mp-4.mp-4",
+  "trailer": "https://www.youtube.com/embed/BG89ff1tjLU?si=OH-_uvk8ALUT9Tig",
+  "character": [
+    {
+      "id": 11,
+      "name": "Monkey D. Luffy",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOU-wL0hZg5V_45pkGPdsWGm3-KV7Et-pR0YujfnbtKcB_PWi2 ",
+      "character": "Main Character"
+    },
+    {
+      "id": 12,
+      "name": "Roronoa Zoro",
+      "image": "https://image.cdn2.seaart.me/temp-convert-webp/png/2023-08-05/52843346128965/4c814eff0c54e7c77619db91c9eff66787d7dada_low.webp "
+    },
+    {
+      "id": 13,
+      "name": "Shanks",
+      "image": "https://staticg.sportskeeda.com/editor/2022/07/b7805-16587738318456-1920.jpg "
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d91"
+  },
+  "id": 2,
+  "title": "Naruto",
+  "image": "https://m.media-amazon.com/images/M/MV5BZTNjOWI0ZTAtOGY1OS00ZGU0LWEyOWYtMjhkYjdlYmVjMDk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg ",
+  "episodes": 720,
+  "genre": [
+    "Action",
+    "Adventure",
+    "Shonen"
+  ],
+  "description": "Naruto Uzumaki dreams of becoming the Hokage of the Hidden Leaf Village.",
+  "watchLink": "https://archive.org/embed/Naruto-Shippuden-episode-10-sealing-jutsu-nine-phantom-dragons",
+  "trailer": "https://www.youtube.com/embed/QczGoCmX-pI?si=VRO02JCupa2a2U4c",
+  "character": [
+    {
+      "id": 21,
+      "name": "Naruto Uzumaki",
+      "image": "https://pbs.twimg.com/media/FBqWxniVQAIX7Q6.png ",
+      "character": "Main Character"
+    },
+    {
+      "id": 22,
+      "name": "Sasuke Uchiha",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTS6ywMw2ljpnd-UAHD7Cuy5BxEHQO-GBpotkX8Eb1nnQysWeUM "
+    },
+    {
+      "id": 23,
+      "name": "Itachi Uchiha",
+      "image": "https://i.pinimg.com/736x/c6/d4/5a/c6d45aab6cf9bdeb9d309d5fb8801606.jpg "
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d92"
+  },
+  "id": 3,
+  "title": "Attack on Titan",
+  "image": "https://wallpapercave.com/wp/wp9306722.jpg",
+  "episodes": 88,
+  "genre": [
+    "Action",
+    "Drama",
+    "Fantasy"
+  ],
+  "description": "Eren Yeager fights against the Titans threatening humanity's survival.",
+  "watchLink": "https://archive.org/embed/sh1ng3k1-no-ky0j1n-dub-s35s0ns-3-part-2",
+  "trailer": "https://www.youtube.com/embed/3xNH23QkNpk?si=LnKkd38CGSm9ze_Z",
+  "character": [
+    {
+      "id": 31,
+      "name": "Eren Yeager",
+      "image": "https://preview.redd.it/gvlplalkn2o61.png?auto=webp&s=55b55749d1f23fae31c6cd115b09cf77403845e9 ",
+      "character": "Main Character"
+    },
+    {
+      "id": 32,
+      "name": "Mikasa Ackerman",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGETUEo5mxtMFO--RtvpKHU2MEjDLdnxdxHY29fzRnZW4Hipda "
+    },
+    {
+      "id": 33,
+      "name": "Levi Ackerman",
+      "image": "https://pbs.twimg.com/media/FhcvSt1VsAAJv1h.jpg "
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d93"
+  },
+  "id": 4,
+  "title": "Blue Box",
+  "image": "https://imgs.search.brave.com/i5snBLqkb2CyWoqNjHGUYpyVVcAE-2_GjwJkr_OuYiY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1QllUTmhObVEw/WmpndFkyTTRaUzAw/TlRsaExUZzFNRFF0/TkRBMk16aGtPVE15/TXpkbVhrRXlYa0Zx/Y0djQC5qcGc",
+  "episodes": 24,
+  "genre": [
+    "Romance",
+    "Sports",
+    "Drama"
+  ],
+  "description": "A story of love and badminton between Taiki Inomata and Chinatsu Kano.",
+  "watchLink": "https://www.netflix.com/embed/81663323",
+  "trailer": "https://www.youtube.com/embed/tcK9Eghsfq8?si=qBbHVnAWoVP8WAHw",
+  "character": [
+    {
+      "id": 41,
+      "name": "Taiki Inomata",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3PUBF_xCnkTXlhASS4isguvM1H8iJfhroeNSlKQYjQyhRhqnu ",
+      "character": "Main Character"
+    },
+    {
+      "id": 42,
+      "name": "Chinatsu Kano",
+      "image": "https://aniworlddiary.com/wp-content/uploads/2024/10/Romantic-Anime-Fall-2024.jpg"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d94"
+  },
+  "id": 5,
+  "title": "Bleach",
+  "image": "https://m.media-amazon.com/images/M/MV5BMjgyM2QzMjAtOGZjOS00OGFkLTkxZGYtMDJjZGM5MzIzYmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg ",
+  "episodes": 366,
+  "genre": [
+    "Action",
+    "Supernatural",
+    "Shonen"
+  ],
+  "description": "Ichigo Kurosaki gains the powers of a Soul Reaper and protects the human world from evil spirits.",
+  "watchLink": "https://aniplaynow.live/anime/info/169755",
+  "trailer": "https://www.youtube.com/embed/KPL8K8Rfyxc?si=YCLDDyCk1EyJRMqH",
+  "character": [
+    {
+      "id": 111,
+      "name": "Ichigo Kurosaki",
+      "image": "https://i.pinimg.com/736x/47/c4/5c/47c45c58bc10e41d6408fe91b791cfb8.jpg",
+      "character": "Main Character"
+    },
+    {
+      "id": 112,
+      "name": "Grimmjow Jaegerjaquez ",
+      "image": "https://i.redd.it/u8bcc7170ze91.jpg "
+    },
+    {
+      "id": 113,
+      "name": "Sosuke Aizen",
+      "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/06/custom-image-of-aizen-with-aizen-vs-ichigo-in-the-background-in-bleach.png "
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d95"
+  },
+  "id": 6,
+  "title": "Demon Slayer",
+  "image": "https://m.media-amazon.com/images/M/MV5BNzEzYjhkYTctMWNmZS00MTc5LWI4OWUtZjFkNzNkYTNkMTJlXkEyXkFqcGc@._V1_.jpg ",
+  "episodes": 47,
+  "genre": [
+    "Action",
+    "Supernatural",
+    "Shonen"
+  ],
+  "description": "Tanjiro Kamado fights demons after his family is slaughtered.",
+  "watchLink": "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
+  "trailer": "https://www.youtube.com/embed/lLD5xMTvCX4?si=LcD257QH5nJ1k2dx",
+  "character": [
+    {
+      "id": 51,
+      "name": "Tanjiro Kamado",
+      "image": "https://i.pinimg.com/736x/90/76/a3/9076a348ad73f4a3383fe6d583e67d62.jpg ",
+      "character": "Main Character"
+    },
+    {
+      "id": 52,
+      "name": "Nezuko Kamado",
+      "image": "https://userstyles.org/style_screenshots/214055_after.jpeg?r=1740405685 "
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d96"
+  },
+  "id": 7,
+  "title": "Jujutsu Kaisen",
+  "image": "https://i.pinimg.com/736x/24/05/4e/24054ef724d2f2cd13feeb15d4c680e9.jpg",
+  "episodes": 47,
+  "genre": [
+    "Action",
+    "Supernatural",
+    "Shonen"
+  ],
+  "description": "Yuji Itadori fights curses after consuming a powerful curse object.",
+  "watchLink": "https://aniplaynow.live/anime/info/113415",
+  "trailer": "https://www.youtube.com/embed/Pm-wNmS9RGI?si=zHF1x5dup9yk-836",
+  "character": [
+    {
+      "id": 71,
+      "name": "Yuji Itadori",
+      "image": "https://64.media.tumblr.com/099f641aec6e2297cb9f99af48a8d062/e8b3d226f7525255-87/s540x810/0ded823fc74f2e7fa0e292145aab88efa8db7e46.png ",
+      "character": "Main Character"
+    },
+    {
+      "id": 72,
+      "name": "Satoru Gojo",
+      "image": "https://i.pinimg.com/736x/52/43/a0/5243a03b6480e0cae18a711d99288a37.jpg "
+    },
+    {
+      "id": 73,
+      "name": "Ryomen Sukuna",
+      "image": "https://wallpapers.com/images/hd/sukuna-smirk-anime-artwork-qycvf9vghjybgywj.jpg "
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d97"
+  },
+  "id": 8,
+  "title": "Sakamoto Days",
+  "image": "https://imgs.search.brave.com/erL1-HCvRHm1drH6Agpg_KOf-tcfAODD5TSKkCnqOps/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk0yTXdaRFJt/WVdJdE5HSXpaQzAw/WldFeExXRXdOV1l0/Tm1NMVptVTNPVEEz/Tm1ZNFhrRXlYa0Zx/Y0djQC5qcGc",
+  "episodes": 24,
+  "genre": [
+    "Action",
+    "Comedy",
+    "Shonen"
+  ],
+  "description": "A retired hitman runs a convenience store but can't escape his past.",
+  "watchLink": "https://aniplaynow.live/anime/info/177709",
+  "trailer": "https://www.youtube.com/embed/9TbmxbckSjE?si=nQAG7ZobxUxN4FZe",
+  "character": [
+    {
+      "id": 81,
+      "name": "Taro Sakamoto",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsdl1XnA2dEQpeQdJt8FZti4-toidxV5rHUXioBFudH5gLNwQn",
+      "character": "Main Character"
+    },
+    {
+      "id": 82,
+      "name": "Shin Asakura",
+      "image": "https://pbs.twimg.com/tweet_video_thumb/GhFjw_EbsAEHn8D.jpg "
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d98"
+  },
+  "id": 9,
+  "title": "Dr. Stone",
+  "image": "https://otakuusamagazine.com/wp-content/uploads/2019/08/dr-stone-kv2.jpeg ",
+  "episodes": 63,
+  "genre": [
+    "Adventure",
+    "Science Fiction",
+    "Shonen"
+  ],
+  "description": "Senku Ishigami uses science to rebuild civilization after a mysterious event.",
+  "watchLink": "https://aniplaynow.live/anime/info/105333",
+  "trailer": "https://www.youtube.com/embed/pkMgTN4Joi4?si=N2RefRs0SQXcjp5a",
+  "character": [
+    {
+      "id": 91,
+      "name": "Senku Ishigami",
+      "image": "https://pbs.twimg.com/media/ElV8MsjXUAQbvUc.jpg ",
+      "character": "Main Character"
+    },
+    {
+      "id": 92,
+      "name": "Chrome",
+      "image": "https://a.storyblok.com/f/178900/640x360/f86f0e308d/1150c46f9e8db861974bc684a401604c1569016279_full.jpg/m/640x360"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67c889264511d5be1f0b4d99"
+  },
+  "id": 10,
+  "title": "Solo Leveling",
+  "image": "https://imgs.search.brave.com/T3vtysjml8Dz19JUqy7T6SYVA3ScNNeyZ2Oy_nZWJ8Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLnNyY2RuLmNv/bS93b3JkcHJlc3Mv/d3AtY29udGVudC91/cGxvYWRzLzIwMjQv/MDEvc29sby1sZXZl/bGluZy10di1zZXJp/ZXMtcG9zdGVyLmpw/Zw",
+  "episodes": 12,
+  "genre": [
+    "Action",
+    "Fantasy",
+    "Adventure"
+  ],
+  "description": "Jinwoo Sung levels up from the weakest hunter to the strongest.",
+  "watchLink": "https://aniplaynow.live/anime/info/176496",
+  "trailer": "https://www.youtube.com/embed/byJ7pxxhaDY?si=RXqClTgmZNUrrbeD",
+  "character": [
+    {
+      "id": 101,
+      "name": "Sung Jin-Woo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIx9ex7OHedyRUOjSF5-Asu5_vk-1XBLfxWjNUae_bOZZZe4N ",
+      "character": "Main Character"
+    },
+    {
+      "id": 102,
+      "name": "Cha Hae-In",
+      "image": "https://i.redd.it/mh-wilds-can-some-please-do-cha-hae-in-from-solo-leveling-v0-myo3euu0pqhe1.jpg?width=300&format=pjpg&auto=webp&s=390956454cf185e9e2a6da563849973bc5c8d2f8"
+    }
+  ]
+}]

@@ -1,6 +1,6 @@
 import {  useNavigate } from 'react-router-dom';
 import {  useState} from 'react';
-import './loginpage.css';
+import './css/loginpage.css';
 // import users from './user'
 import axios from "axios";
 import img from './images/loginpage.jpg'
@@ -82,11 +82,11 @@ export default function Login() {
                 localStorage.setItem("User", res.data.user.name); 
                 navigate("/home");
             } else {
-                setError("Invalid credentials. Please try again.");
+                setError(res.data.message ||"Invalid credentials. Please try again.");
             }
         } catch (error) {
             console.error("Login Error:", error);
-            setError("Invalid credentials. Please try again.");
+            setError(error.response?.data?.message ||"Invalid credentials. Please try again.");
         }
         // setLoading(false);
     };

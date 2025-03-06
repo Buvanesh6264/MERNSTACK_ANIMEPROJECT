@@ -1,0 +1,14 @@
+
+.wishlist nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.wishlist .header {
+    text-align: center;
+    background-color: lightgray;
+    color: darkblue;
+    width: 100vw;
+    padding: 20px 0;
+}

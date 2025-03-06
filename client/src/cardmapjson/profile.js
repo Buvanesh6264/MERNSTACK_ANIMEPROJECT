@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import axios from "axios";
 import { FaUserCircle } from "react-icons/fa"; 
-import "./profile.css";
+import "./css/profile.css";
 
 const Profile = () => {
     const [user, setUser] = useState(null);
