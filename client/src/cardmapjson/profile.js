@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import axios from "axios";
+import {useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa"; 
 import "./css/profile.css";
 
@@ -8,6 +9,7 @@ const Profile = () => {
     const [user, setUser] = useState(null);
     const [edit, setEdit] = useState(false);
     const [update, setUpdate] = useState({ email: "", phone: "" });
+    const navigate = useNavigate();
 
     useEffect(() => {
         const username = localStorage.getItem("User");
@@ -58,7 +60,9 @@ const Profile = () => {
         }
         setEdit(!edit);
     };
-
+    function logout(){
+        navigate("/");
+}
     return (
         <div className="profile">
             <Navbar />
@@ -79,10 +83,12 @@ const Profile = () => {
                                 
                                 <label>Phone:</label>
                                 <input type="text" name="phone" value={update.phone} onChange={handleChange} readOnly={!edit} />
-                                
-                                <button type="button" className="btn" onClick={handleUpdate}>
-                                    {edit ? "Save Changes" : "Edit Profile"}
-                                </button>
+                                <div>
+                                   <button type="button" className="btn" onClick={handleUpdate}>
+                                       {edit ? "Save Changes" : "Edit Profile"}
+                                   </button>
+                                   <button className="logout" onClick={logout}>Logout</button>
+                                </div>
                             </form>
                         </div>
                     </div>

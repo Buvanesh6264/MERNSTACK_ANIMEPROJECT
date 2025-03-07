@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "./navbar";
 import "./css/info.css";
+import Footer from "./footer";
 // import "./card.css";
 // import animeInfo from "./data";
 
@@ -12,6 +13,7 @@ function Info() {
   const navigate = useNavigate();
   const [anime, setAnime] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [added, setAdded] = useState(false);
 
   useEffect(() => {
     axios
@@ -23,11 +25,32 @@ function Info() {
   if (!anime) {
     return <h1 style={{ textAlign: "center" }}>No anime data available</h1>;
   }
-
+const addwatchlist = () => {
+    const User = localStorage.getItem("User");
+    if (User) {
+      axios
+        .post("http://localhost:3001/addwatchlist", {
+          animeId: animeId,
+          username: User,
+        })
+        .then((res) => {
+          if (res.data.error) {
+            alert(res.data.error);
+          } else {
+            setAdded(true);
+            alert(res.data.message);
+          }
+        })
+        .catch((error) => {
+          console.error("Error adding to watchlist:", error);
+        });
+    } else {
+      navigate("/login");
+    }
+  }; 
   return (
-    <>
+    <div>
       <Navbar />
-      
       <div className={showModal ? "blur-background" : ""}>
         <div className="anime-banner">
           <div className="overlay"></div>
@@ -54,7 +77,10 @@ function Info() {
                 <button onClick={() => navigate("/animepage")} className="list-button">
                   Anime page
                 </button>
-              </div>
+              </div><br/>
+              <button onClick={addwatchlist} className="list-button">
+              {added ? "Added to Watch List" : "Add to Watch List"}
+                </button>
             </div>
           </div>
         </div>
@@ -101,7 +127,8 @@ function Info() {
           </div>
         </div>
       )}
-    </>
+      <Footer/>
+    </div>
   );
 }
 

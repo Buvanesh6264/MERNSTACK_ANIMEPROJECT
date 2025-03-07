@@ -9,6 +9,8 @@ import NotFound from './NotFound';
 import Homepage from './cardmapjson/homepage';
 import Profile from './cardmapjson/profile';
 import Wishlist from './cardmapjson/wishlist';
+import Movieinfo from './cardmapjson/movieinfo';
+import Movies from './cardmapjson/movies';
 
 function Mainparent(){
   return (
@@ -21,7 +23,9 @@ function Mainparent(){
             <Route path="/animeinfo" element={<Info/>} />
             <Route path="/profile" element={<Profile/>} />
             <Route path="/Carddata" element={<Carddata/>} />
-            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/WatchList" element={<Wishlist />} />
+            <Route path="/moviepage" element={<Movies />} />
+            <Route path="/movieinfo" element={<Movieinfo/>} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     </div>

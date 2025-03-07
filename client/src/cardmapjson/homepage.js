@@ -3,10 +3,12 @@ import Navbar from './navbar';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './css/homepage.css';
+import Footer from './footer';
 
 const Homepage = () => {
     const [username, setUsername] = useState("");
     const [trendingAnime, setTrendingAnime] = useState([]);
+    const [trendingMovie, setTrendingMovie] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const backgroundImages = [
         require("./images/carousel1.jpg"),
@@ -30,6 +32,11 @@ const Homepage = () => {
                 setTrendingAnime(response.data.documents);
             })
             .catch(error => console.error('Error fetching anime:', error));
+        axios.get("http://localhost:3001/gettrendingmovie")
+            .then(response => {
+                setTrendingMovie(response.data.documents);
+            })
+            .catch(error => console.error('Error fetching anime:', error));
     }, []);
 
     useEffect(() => {
@@ -45,7 +52,9 @@ const Homepage = () => {
     const moreinfo = (anime) => {
         navigate("/animeinfo", { state: { anime } });
     };
-    
+    const moreinfo1 = (anime) => {
+        navigate("/movieinfo", { state: { anime } });
+    };
     return (
         <div className="homepage">
             <Navbar />
@@ -72,6 +81,18 @@ const Homepage = () => {
                     ))}
                 </div>
             </div>
+            <div className="trending-section-movies">
+                <h2>Trending Movie</h2>
+                <div className="anime-list">
+                    {trendingMovie.map((anime, index) => (
+                        <div key={index} className="anime-card" onClick={() => moreinfo1(anime)}>
+                            <img src={anime.image} alt={anime.title} />
+                            <h3>{anime.title}</h3>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            {/* <Footer/> */}
         </div>
     );
 };

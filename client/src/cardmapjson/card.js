@@ -4,6 +4,7 @@ import Carddata from './carddata';
 // import data from './data';
 import "./css/cardmain.css";
 import Navbar from './navbar';
+import Footer from "./footer";
 
 function Card() {
   const [animeList, setAnimeList] = useState([]);
@@ -30,7 +31,8 @@ function Card() {
         {animeList.map((val) => (
           <Carddata key={val.id} products={val} />
         ))}
-      </div>
+      </div><br/><br/>
+      <Footer/>
     </div>
   );
 }

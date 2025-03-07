@@ -58,7 +58,7 @@
     transform: scale(1.05);
 }
 
-.trending-section {
+.trending-section ,.trending-section-movies{
     margin-top: 40px;
     padding: 20px;
     background: rgba(0, 0, 0, 0.5);
@@ -68,7 +68,7 @@
     text-align: center;
 }
 
-.trending-section h2 {
+.trending-section h2 ,.trending-section-movies h2{
     font-size: 2rem;
     margin-bottom: 15px;
 }

@@ -1,0 +1,187 @@
+[
+    {
+      "id": 1,
+      "title": "Weathering with You",
+      "image": "https://m.media-amazon.com/images/I/81cA7cCQ9QL._AC_UF1000,1000_QL80_.jpg",
+      "duration": 112,
+      "genre": ["Romance", "Fantasy", "Drama"],
+      "description": "A high school boy who has run away to Tokyo meets a girl who can manipulate the weather.",
+      "watchLink": "https://www.netflix.com/title/81245964",
+      "trailer": "https://www.youtube.com/embed/Q6iK6DjV_iE",
+      "character": [
+        {
+          "id": 11,
+          "name": "Hodaka Morishima",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/3/3e/HodakaMorishima-Profile.png",
+          "character": "Main Character"
+        },
+        {
+          "id": 12,
+          "name": "Hina Amano",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/4/4b/HinaAmano-Profile.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Silent Voice",
+      "image": "https://m.media-amazon.com/images/M/MV5BZjUwZmJmNTMtY2FkNC00OTI5LWE2NGYtMTg5ZDEwYjkwY2I5XkEyXkFqcGc@._V1_.jpg",
+      "duration": 130,
+      "genre": ["Drama", "Slice of Life"],
+      "description": "A young man seeks redemption for bullying a deaf girl in elementary school.",
+      "watchLink": "https://www.netflix.com/title/80223226",
+      "trailer": "https://www.youtube.com/embed/nfK6UgLra7g",
+      "character": [
+        {
+          "id": 21,
+          "name": "Shoya Ishida",
+          "image": "https://static.wikia.nocookie.net/koenokatachi/images/4/41/Shoya.jpg",
+          "character": "Main Character"
+        },
+        {
+          "id": 22,
+          "name": "Shoko Nishimiya",
+          "image": "https://static.wikia.nocookie.net/koenokatachi/images/d/d8/Shoko.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "5 Centimeters per Second",
+      "image": "https://m.media-amazon.com/images/M/MV5BZGM1ZjM1NjEtMzA3Ni00NmQ3LWJmNTgtNGFjNTQxMDFlOGJmXkEyXkFqcGc@._V1_.jpg",
+      "duration": 63,
+      "genre": ["Romance", "Drama", "Slice of Life"],
+      "description": "A touching story about childhood friends growing apart over time.",
+      "watchLink": "https://www.crunchyroll.com/series/GY5P7DQEY/5-centimeters-per-second",
+      "trailer": "https://www.youtube.com/embed/yWLurIe2NvU",
+      "character": [
+        {
+          "id": 31,
+          "name": "Takaki Tohno",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/7/74/Takaki.jpg",
+          "character": "Main Character"
+        },
+        {
+          "id": 32,
+          "name": "Akari Shinohara",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/0/0f/Akari.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Garden of Words",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTc1NDY2MTY2OV5BMl5BanBnXkFtZTgwNzE1NzI5MDE@._V1_.jpg",
+      "duration": 46,
+      "genre": ["Romance", "Drama"],
+      "description": "A high school student and a mysterious woman form a bond over rainy days in a park.",
+      "watchLink": "https://www.netflix.com/title/80031800",
+      "trailer": "https://www.youtube.com/embed/HTTRweJGrU8",
+      "character": [
+        {
+          "id": 41,
+          "name": "Takao Akizuki",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/b/b2/Takao.jpg",
+          "character": "Main Character"
+        },
+        {
+          "id": 42,
+          "name": "Yukari Yukino",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/4/41/Yukari.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Your Name",
+      "image": "https://m.media-amazon.com/images/M/MV5BMGFiNjZjMzEtODMwNS00YTYyLWIwOTctZDZjNmEyMjczNjdmXkEyXkFqcGc@._V1_.jpg",
+      "duration": 107,
+      "genre": ["Romance", "Fantasy", "Drama"],
+      "description": "Two teenagers mysteriously swap bodies and uncover a deeper connection.",
+      "watchLink": "https://www.netflix.com/title/80125929",
+      "trailer": "https://www.youtube.com/embed/xU47nhruN-Q",
+      "character": [
+        {
+          "id": 51,
+          "name": "Taki Tachibana",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/6/6e/Taki.png",
+          "character": "Main Character"
+        },
+        {
+          "id": 52,
+          "name": "Mitsuha Miyamizu",
+          "image": "https://static.wikia.nocookie.net/makotoshinkai/images/e/e8/Mitsuha.png"
+        }
+      ]
+    },
+    {
+        "id": 6,
+        "title": "Josee, the Tiger and the Fish",
+        "image": "https://m.media-amazon.com/images/M/MV5BZTUxNmE4MGItYTI0NC00NjI5LWExNTEtYjJlMTZmNzlmNmFkXkEyXkFqcGc@._V1_.jpg",
+        "duration": 98,
+        "genre": ["Romance", "Drama", "Slice of Life"],
+        "description": "A university student becomes a caretaker for a disabled girl who dreams of exploring the world.",
+        "watchLink": "https://www.netflix.com/title/81513495",
+        "trailer": "https://www.youtube.com/embed/YE_1D6YAdn8",
+        "character": [
+          {
+            "id": 61,
+            "name": "Tsuneo Suzukawa",
+            "image": "https://static.wikia.nocookie.net/joseethetigerandthefish/images/1/1f/Tsuneo.jpg",
+            "character": "Main Character"
+          },
+          {
+            "id": 62,
+            "name": "Josee (Kumiko)",
+            "image": "https://static.wikia.nocookie.net/joseethetigerandthefish/images/d/d7/Josee.jpg"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "I Want to Eat Your Pancreas",
+        "image": "https://m.media-amazon.com/images/M/MV5BZmI0ZGEzOTktODU5NC00OTQ5LThhZWEtMTM2ZDhlNjA4MWEwXkEyXkFqcGc@._V1_.jpg",
+        "duration": 108,
+        "genre": ["Romance", "Drama", "Slice of Life"],
+        "description": "A high school boy finds a diary belonging to a terminally ill girl and forms an unexpected bond with her.",
+        "watchLink": "https://www.crunchyroll.com/series/GYVDG7QWY/i-want-to-eat-your-pancreas",
+        "trailer": "https://www.youtube.com/embed/Nh2Y0aHsDRE",
+        "character": [
+          {
+            "id": 71,
+            "name": "Haruki Shiga",
+            "image": "https://static.wikia.nocookie.net/i-want-to-eat-your-pancreas/images/d/d8/Haruki_Shiga.png",
+            "character": "Main Character"
+          },
+          {
+            "id": 72,
+            "name": "Sakura Yamauchi",
+            "image": "https://static.wikia.nocookie.net/i-want-to-eat-your-pancreas/images/1/1a/Sakura_Yamauchi.png"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "The Girl Who Leapt Through Time",
+        "image": "https://m.media-amazon.com/images/M/MV5BMTY2Nzc1MzI0M15BMl5BanBnXkFtZTcwMjA2MDU1MQ@@._V1_FMjpg_UX1000_.jpg",
+        "duration": 98,
+        "genre": ["Romance", "Sci-Fi", "Drama"],
+        "description": "A high school girl gains the ability to leap through time, leading to unexpected consequences.",
+        "watchLink": "https://www.crunchyroll.com/series/GYJQ1W5XY/the-girl-who-leapt-through-time",
+        "trailer": "https://www.youtube.com/embed/4neYYuGZ4kM",
+        "character": [
+          {
+            "id": 81,
+            "name": "Makoto Konno",
+            "image": "https://static.wikia.nocookie.net/thegirlwholeaptthroughtime/images/1/12/Makoto.jpg",
+            "character": "Main Character"
+          },
+          {
+            "id": 82,
+            "name": "Chiaki Mamiya",
+            "image": "https://static.wikia.nocookie.net/thegirlwholeaptthroughtime/images/2/29/Chiaki.jpg"
+          }
+        ]
+      }
+  ]
+  

@@ -26,8 +26,9 @@ const Navbar = () => {
           <ul className="sidebar-links">
             <li><a href="/home">HOME</a></li>
             <li><a href="/profile">PROFILE</a></li>
-            <li><a href="/wishlist">Wishlist</a></li>
+            <li><a href="/WatchList">WATCHLIST</a></li>
             <li><a href="/animepage">ANIME</a></li>
+            <li><a href="/moviepage">MOVIE</a></li>
             <li><button className="logout" onClick={logout}>Logout</button></li>
         </ul>
       </div>
@@ -36,8 +37,9 @@ const Navbar = () => {
       <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li><a href="/home">HOME</a></li>
         <li><a href="/profile">PROFILE</a></li>
-        <li><a href="/wishlist">Wishlist</a></li>
+        <li><a href="/WatchList">WATCHLIST</a></li>
         <li><a href="/animepage">ANIME</a></li>
+        <li><a href="/moviepage">MOVIE</a></li>
         <li><button className="logout" onClick={logout}>Logout</button></li>
       </ul>
     </nav>
